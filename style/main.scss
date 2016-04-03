@@ -41,12 +41,16 @@ $red: #e12a2a;
   margin-left: 10px;
   vertical-align: middle;
   padding: auto 0;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .form-control-2 option:hover
 {
   background: $orchid;
   cursor: pointer;
+}
+
+::selection {
+  background: lighten($orchid, 20%);
 }
 /*******
   end of navbar and basic styling

@@ -59,7 +59,8 @@ app.controller('MyController', function($scope) {
             up: 7,
             author: 'Bruce Banner',
             comments: [
-                ['Ricky', 'I clacked hard seeing this']
+                ['Ricky', 'I clacked hard seeing this'],
+                ['Bubbles', 'There have been Samsquamch sitings near this place']
             ],
             date: '01/22/1984',
             image: 'img/thor2.jpg'

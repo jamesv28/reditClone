@@ -31,11 +31,14 @@ strong {
   margin-left: 10px;
   vertical-align: middle;
   padding: auto 0;
-  margin-top: 10px; }
+  margin-top: 5px; }
 
 .form-control-2 option:hover {
   background: #CD69C9;
   cursor: pointer; }
+
+::selection {
+  background: #e7b5e5; }
 
 /*******
   end of navbar and basic styling
