@@ -63,12 +63,38 @@ $red: #e12a2a;
 .indPlaces {
   margin-bottom: 10px;
 }
-
+.fa-thumbs-down {
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-timing-function: ease-in;
+}
 .fa-thumbs-down:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
   color: $red;
   cursor: pointer;
 }
+
+.fa-thumbs-up {
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-timing-function: ease-in;
+}
 .fa-thumbs-up:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
   color: $blue;
   cursor: pointer;
 }
@@ -81,6 +107,37 @@ $red: #e12a2a;
     border: $green;
   }
 }
+
+/*****
+  image manipulation
+  **********/
+
+//.img {
+//  -webkit-transition-duration: 0.5s;
+//}
+//
+//.img img {
+//  padding:10px;
+//  border:1px solid #fff;
+//}
+//
+//.img:hover{
+//  -webkit-transform:scale(0.8);
+//  -webkit-box-shadow:0px 0px 30px #ccc;
+//}
+//
+//.img .mask{
+//  width: 100%;
+//  background-color: rgb(0, 0, 0);
+//  position: absolute;
+//  height: 100%;
+//  opacity:0.6;
+//  cursor:pointer;
+//  -webkit-transition-duration: 0.5s;
+//}
+//#img-1:hover .mask{
+//  height:0%;
+//}
 
 /*********
 Animating
@@ -157,4 +214,16 @@ Animating
     height: 30px;
     left: 0px;
   }
+}
+
+/*********
+  form validation colors
+  *************/
+//form .ng-invalid.ng-dirty { background-color: lightpink; }
+//form .ng-valid.ng-dirty { background-color: lightgreen; }
+//span.summary.ng-invalid { color: $red; font-weight: bold; }
+//span.summary.ng-valid { color: $green; }
+
+.has-error {
+  color: $red;
 }

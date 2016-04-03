@@ -49,11 +49,37 @@ strong {
 .indPlaces {
   margin-bottom: 10px; }
 
+.fa-thumbs-down {
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-timing-function: ease-in; }
+
 .fa-thumbs-down:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
   color: #e12a2a;
   cursor: pointer; }
 
+.fa-thumbs-up {
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-timing-function: ease-in; }
+
 .fa-thumbs-up:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
   color: #8470FF;
   cursor: pointer; }
 
@@ -64,6 +90,9 @@ strong {
     color: #7FFFD4;
     border: #7FFFD4; }
 
+/*****
+  image manipulation
+  **********/
 /*********
 Animating
 ************/
@@ -123,5 +152,10 @@ Animating
     opacity: 1;
     height: 30px;
     left: 0px; } }
+/*********
+  form validation colors
+  *************/
+.has-error {
+  color: #e12a2a; }
 
 /*# sourceMappingURL=main.css.map */

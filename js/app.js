@@ -1,8 +1,10 @@
 var app = angular.module('myApp', [
-    'ngAnimate'
+    'ngAnimate',
+    'ui.bootstrap',
+    'bootstrapLightbox'
 ]);
 
-app.controller('MyController', function($scope) {
+app.controller('MyController', function($scope, Lightbox) {
 
 
     $scope.places = [
@@ -66,6 +68,12 @@ app.controller('MyController', function($scope) {
             image: 'img/thor2.jpg'
         }
     ];
+
+
+
+    $scope.openLightboxModal = function (index) {
+        Lightbox.openModal($scope.places, index);
+    };
 
     $scope.thumbsUp = function() {
        for(var i = 0; i < $scope.places.length;i++) {
