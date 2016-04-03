@@ -1,10 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+/* roboto slab */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 html, body {
-  @import url(https://fonts.googleapis.com/css?family=Montserrat); }
+  font-family: 'Roboto Slab', serif; }
 
-h1, h2 {
-  @import url(https://fonts.googleapis.com/css?family=Montserrat); }
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif; }
+
+strong {
+  font-weight: 700; }
 
 .btn-primary {
   background: #8470FF;
@@ -28,7 +33,32 @@ h1, h2 {
   padding: auto 0;
   margin-top: 10px; }
 
+.form-control-2 option:hover {
+  background: #CD69C9;
+  cursor: pointer; }
+
+/*******
+  end of navbar and basic styling
+*******/
 #main {
   margin-top: 20px; }
+
+.indPlaces {
+  margin-bottom: 10px; }
+
+.fa-thumbs-down:hover {
+  color: #8B1A1A;
+  cursor: pointer; }
+
+.fa-thumbs-up:hover {
+  color: #8470FF;
+  cursor: pointer; }
+
+.btn-success {
+  color: #7FFFD4;
+  border: #7FFFD4; }
+  .btn-success:hover {
+    color: #7FFFD4;
+    border: #7FFFD4; }
 
 /*# sourceMappingURL=main.css.map */
