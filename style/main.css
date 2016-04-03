@@ -47,7 +47,7 @@ strong {
   margin-bottom: 10px; }
 
 .fa-thumbs-down:hover {
-  color: #8B1A1A;
+  color: #e12a2a;
   cursor: pointer; }
 
 .fa-thumbs-up:hover {
@@ -60,5 +60,65 @@ strong {
   .btn-success:hover {
     color: #7FFFD4;
     border: #7FFFD4; }
+
+/*********
+Animating
+************/
+.animate-enter {
+  -webkit-animation: enter 600ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: enter 600ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  display: block;
+  position: relative; }
+
+@-webkit-keyframes enter {
+  from {
+    opacity: 0;
+    height: 0px;
+    left: -70px; }
+  75% {
+    left: 15px; }
+  to {
+    opacity: 1;
+    height: 30px;
+    left: 0px; } }
+@keyframes enter {
+  from {
+    opacity: 0;
+    height: 0px;
+    left: -70px; }
+  75% {
+    left: 15px; }
+  to {
+    opacity: 1;
+    height: 30px;
+    left: 0px; } }
+.animate-leave {
+  -webkit-animation: leave 600ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: leave 600ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  display: block;
+  position: relative; }
+
+@-webkit-keyframes leave {
+  to {
+    opacity: 0;
+    height: 0px;
+    left: -70px; }
+  25% {
+    left: 15px; }
+  from {
+    opacity: 1;
+    height: 30px;
+    left: 0px; } }
+@keyframes leave {
+  to {
+    opacity: 0;
+    height: 0px;
+    left: -70px; }
+  25% {
+    left: 15px; }
+  from {
+    opacity: 1;
+    height: 30px;
+    left: 0px; } }
 
 /*# sourceMappingURL=main.css.map */
