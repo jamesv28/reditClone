@@ -62,7 +62,7 @@ app.controller('MyController', function($scope) {
                 ['Ricky', 'I clacked hard seeing this']
             ],
             date: '01/22/1984',
-            image: 'img/thor.jpg'
+            image: 'img/thor2.jpg'
         }
     ];
 
