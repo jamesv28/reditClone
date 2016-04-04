@@ -84,4 +84,14 @@ app.controller('MyController', function($scope, Lightbox) {
        places.up = place.up -1;
     }; //end of thumbing down
 
+    $scope.addPost = function(newPlace) {
+        $scope.places.push({
+            name: $scope.newPlace.name,
+            description: $scope.newPlace.description,
+            author: $scope.newPlace.author,
+            image: $scope.newPlace.image
+        })
+        console.log($scope.places)
+    };
+    console.log('these are places',$scope.places);
 }); //end of myController

@@ -30,9 +30,8 @@
 </nav><!-- end of navbar -->
 <div class="row" id="main">
     <div class="container-fluid">
-        <div  ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"
-              ng-repeat="place in places |filter: query | orderBy: '-' + filters "
-              class="col-md-offset-2 col-md-8 col-sm-8 col-md-offset-2 indPlaces">
+        <div  ng-repeat="place in places |filter: query | orderBy: '-' + filters "
+              class="enter col-md-offset-2 col-md-8 col-sm-8 col-md-offset-2 indPlaces">
             <!--<a ng-click="openLightboxModal($index)">-->
             <a href="{{place.image}}"  data-lightbox="image-1" data-title="{{place.name}}">
                 <img class="col-md-4" ng-src="{{place.image}}" alt="{{place.name}}">
@@ -70,7 +69,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="container">
-                        <form name="myForm" novalidate ng-submit="addPost(newPlace)">
+                        <form name="myForm" novalidate>
                             <div class="form-group row" ng-class="{ 'has-error' : myForm.name.$invalid && !myForm.name.$pristine , 'text-success': myForm.name.$valid}">
                                 <div class="form-control-label col-md-2 col-md-offset-1">Place: </div>
                                 <div class="col-md-6">
@@ -98,7 +97,7 @@
                             <div class="form-group row" ng-class="{ 'has-error' : myForm.image.$invalid && !myForm.image.$pristine, 'text-success': myForm.image.$valid }">
                                 <label class="form-control-label col-md-2 col-md-offset-1">Image: </label>
                                 <div class="col-md-4">
-                                    <input ng-minlength="8" ng-maxlength="100" class="form-control" required name="image" ng-model="newPlace.image" placeholder="image url">
+                                    <input ng-minlength="8" ng-maxlength="600" class="form-control" required name="image" ng-model="newPlace.image" placeholder="image url">
                                     <p ng-show="myForm.image.$error.minlength" class="help-block">Image is too short.</p>
                                     <p ng-show="myForm.image.$error.maxlength" class="help-block">Image is too long.</p>
                                 </div>
@@ -109,7 +108,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger-outline" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary-outline" ng-disabled="myForm.$invalid" >Add Post</button>
+                <button type="submit" class="btn btn-primary-outline" ng-click='addPost(newPlace)' ng-disabled="myForm.$invalid" >Add Post</button>
             </div>
         </div>
     </div>
